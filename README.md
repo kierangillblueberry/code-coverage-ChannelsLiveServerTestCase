@@ -1,5 +1,7 @@
 # code coverage reproduction
 
+Reproduction for [django/channels/issues/2063](https://github.com/django/channels/issues/2063).
+
 ```
 docker compose -f local.yml build
 docker compose -f local.yml up -d
