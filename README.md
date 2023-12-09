@@ -2,8 +2,15 @@
 
 ```
 docker compose -f local.yml build
+docker compose -f local.yml up -d
+
+sh coverage.sh
 ```
 
+```
+docker compose -f local.yml run --rm django python manage.py test --tag e2e
+docker compose -f local.yml run --rm django python manage.py migrate
+```
 ---- 
 
 Behold My Awesome Project!

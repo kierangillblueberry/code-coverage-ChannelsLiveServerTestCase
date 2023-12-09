@@ -1,3 +1,20 @@
+# TESTING
+pytest-django==4.7.0
+pytest-asyncio==0.21.1
+aiounittest==1.4.2
+faker==20.1.0
+playwright==1.40.0
+pytest-playwright==0.4.3
+coverage==7.3.2
+daphne==4.0.0 # a dependency of ChannelsLiveServerTestCase
+
+watchfiles==0.21.0  # https://github.com/samuelcolvin/watchfiles
+uvicorn[standard]==0.24.0.post1  # https://github.com/encode/uvicorn
+
+# ASGI / Sockets
+channels==4.0.0
+
+# Exisitng
 python-slugify==8.0.1  # https://github.com/un33k/python-slugify
 Pillow==10.1.0  # https://github.com/python-pillow/Pillow
 argon2-cffi==23.1.0  # https://github.com/hynek/argon2_cffi

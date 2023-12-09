@@ -5,6 +5,8 @@ from pathlib import Path
 
 import environ
 
+ASGI_APPLICATION = "config.asgi.application"
+
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent.parent
 # coverage_repro/
 APPS_DIR = BASE_DIR / "coverage_repro"
@@ -116,7 +118,9 @@ PASSWORD_HASHERS = [
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [
-    {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
+    {
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
+    },
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
